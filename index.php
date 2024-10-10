@@ -29,49 +29,40 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
 
 <body>
 
-<div class="container my-5 text-center">
+    <div class="container my-5 text-center">
 
         <h1><strong>PET SHOP</strong></h1>
 
     </div>
+
+    <!-- sezione food -->
 
     <div class="container my-5">
 
         <h2>FOOD</h2>
 
         <div class="container my-4">
+
             <div class="row row-cols-3">
 
-                
-                <div class="col mb-4">
-
-                    <div class="card" style="width: 18rem;">
-                        <img src="<?php echo $db['foods'][0]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['foods'][0]->getName(); ?>">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $db['foods'][0]->getName(); ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $db['foods'][0]->getPrice(); ?>€</p>
-                            <p class="card-text">Tipo: <?php echo $db['foods'][0]->getTaste(); ?></p>
-                            <p class="card-text">Peso: <?php echo $db['foods'][0]->getWeight(); ?></p>
-                        </div>
-                    </div>
-
-                </div>
+                <?php foreach ($db['foods'] as $food) { ?>
 
                 <div class="col mb-4">
 
                     <div class="card" style="width: 18rem;">
-                        <img src="<?php echo $db['foods'][1]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['foods'][1]->getName(); ?>">
+                        <img src="<?php echo $food->getImage(); ?>" class="card-img-top" alt="<?php echo $food->getName(); ?>">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $db['foods'][1]->getName(); ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $db['foods'][1]->getPrice(); ?>€</p>
-                            <p class="card-text">Tipo: <?php echo $db['foods'][1]->getTaste(); ?></p>
-                            <p class="card-text">Peso: <?php echo $db['foods'][1]->getWeight(); ?></p>
+                            <h5 class="card-title"><?php echo $food->getName(); ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $food->getPrice(); ?>€</p>
+                            <p class="card-text">Tipo: <?php echo $food->getTaste(); ?></p>
+                            <p class="card-text">Peso: <?php echo $food->getWeight(); ?></p>
                         </div>
+
                     </div>
 
                 </div>
 
-                
+                <?php } ?>
 
             </div>
 
@@ -79,48 +70,38 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
 
     </div>
 
+    <!-- sezione giochi -->
+
     <div class="container my-5">
 
         <h2>TOY</h2>
 
         <div class="container my-4">
+
             <div class="row row-cols-3">
 
-                
+                <?php foreach ($db['toys'] as $toy) { ?>
+
                 <div class="col mb-4">
 
                     <div class="card" style="width: 18rem;">
-                        <img src="<?php echo $db['toys'][0]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['toys'][0]->getName(); ?>">
+                        <img src="<?php echo $toy->getImage(); ?>" class="card-img-top" alt="<?php echo $toy->getName(); ?>">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $db['toys'][0]->getName(); ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $db['toys'][0]->getPrice(); ?>€</p>
-                            <p class="card-text">Tipo: <?php echo $db['toys'][0]->getMaterial(); ?></p>
-                            <p class="card-text">Peso: <?php echo $db['toys'][0]->getSize(); ?></p>
+                            <h5 class="card-title"><?php echo $toy->getName(); ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $toy->getPrice(); ?>€</p>
+                            <p class="card-text">Tipo: <?php echo $toy->getMaterial(); ?></p>
+                            <p class="card-text">Dimensione: <?php echo $toy->getSize(); ?></p>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="col mb-4">
-
-                    <div class="card" style="width: 18rem;">
-                        <img src="<?php echo $db['toys'][1]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['toys'][1]->getName(); ?>">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $db['toys'][1]->getName(); ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $db['toys'][1]->getPrice(); ?>€</p>
-                            <p class="card-text">Tipo: <?php echo $db['toys'][1]->getMaterial(); ?></p>
-                            <p class="card-text">Peso: <?php echo $db['toys'][1]->getSize(); ?></p>
-                        </div>
-                    </div>
-
-                </div>
-
-                
+                <?php } ?>
 
             </div>
 
         </div>
-
+        
     </div>
 
 </body>
