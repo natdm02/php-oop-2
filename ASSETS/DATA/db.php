@@ -20,13 +20,13 @@ $db = [
     ],
 
     'toys' => [
-        new Toy('Pallina di Gomma', 5.00, 'Gioco', 'immagini/pallina-gomma.jpg', 'Gomma', 'Medium', 'Cani'),  
-        new Toy('Corda di Cotone', 4.00, 'Gioco', 'immagini/corda-cotone.jpg', 'Cotone', 'Small', 'Cani'),
-        new Toy('Topolino di Giocattolo', 3.50, 'Gioco', 'immagini/topolino-giocattolo.jpg', 'Pelliccia', 'Small', 'Gatti'), 
-        new Toy('Palla per Gatti', 6.00, 'Gioco', 'immagini/palla-gatti.jpg', 'Plastica', 'Medium', 'Gatti'),
-        new Toy('Gioco Interattivo per Cani', 15.00, 'Gioco', 'immagini/gioco-interattivo-cani.jpg', 'Plastica', 'Large', 'Cani'),
-        new Toy('Frisbee per Cani', 8.00, 'Gioco', 'immagini/frisbee-cani.jpg', 'Gomma', 'Large', 'Cani'),
-        new Toy('Bastone da Masticare', 7.50, 'Gioco', 'immagini/bastone-masticare.jpg', 'Legno', 'Medium', 'Cani'),
+        new Toy('Pallina di Gomma', 5.00, 'Gioco', 'ASSETS/IMG/pallina-gomma.jpg', 'Gomma', 'Medium', 'Cani'),  
+        new Toy('Corda di Cotone', 4.00, 'Gioco', 'ASSETS/IMG/corda-cotone.jpg', 'Cotone', 'Small', 'Cani'),
+        new Toy('Topolino di Giocattolo', 3.50, 'Gioco', 'ASSETS/IMG/topolino-giocattolo.jpg', 'Pelliccia', 'Small', 'Gatti'), 
+        new Toy('Palla per Gatti', 6.00, 'Gioco', 'ASSETS/IMG/palla-gatti.jpg', 'Plastica', 'Medium', 'Gatti'),
+        new Toy('Gioco Interattivo per Cani', 15.00, 'Gioco', 'ASSETS/IMG/gioco-interattivo-cani.jpg', 'Plastica', 'Large', 'Cani'),
+        new Toy('Frisbee per Cani', 8.00, 'Gioco', 'ASSETS/IMG/frisbee-cani.jpg', 'Gomma', 'Large', 'Cani'),
+        new Toy('Bastone da Masticare', 7.50, 'Gioco', 'ASSETS/IMG/bastone-masticare.jpg', 'Legno', 'Medium', 'Cani'),
     ]
 ];
 
