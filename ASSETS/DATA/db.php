@@ -9,14 +9,14 @@ require_once __DIR__ . '/../MODEL/Products.php';
 $db = [
 
     'foods' => [
-        new Food('Scatoletta di Tonno', 6.00, 'Cibo', 'immagini/scatoletta-tonno.jpg', 'Tonno', '100g', 'Gatti'), 
-        new Food('Scatoletta di Pollo', 6.00, 'Cibo', 'immagini/scatoletta-pollo.jpg', 'Pollo', '120g', 'Cani'),  
-        new Food('Crocchette per Cani', 19.99, 'Cibo', 'immagini/crocchette-cani.jpg', 'Manzo', '2kg', 'Cani'),
-        new Food('Crocchette per Gatti', 18.50, 'Cibo', 'immagini/crocchette-gatti.jpg', 'Pollo', '1.5kg', 'Gatti'),
-        new Food('Snack per Cani', 5.50, 'Cibo', 'immagini/snack-cani.jpg', 'Filetto', '500g', 'Cani'),
-        new Food('Latte per Gatti', 3.00, 'Cibo', 'immagini/latte-gatti.jpg', 'Gusto Misto', '250ml', 'Gatti'),
-        new Food('Biscotti per Cani', 4.00, 'Cibo', 'immagini/biscotti-cani.jpg', 'Pollo e Riso', '300g', 'Cani'),
-        new Food('Cibo Umido per Gatti', 7.00, 'Cibo', 'immagini/cibo-umido-gatti.jpg', 'Tonno', '400g', 'Gatti'),
+        new Food('Scatoletta di Tonno', 6.00, 'Cibo', 'ASSETS/IMG/scatoletta-tonno.jpg', 'Tonno', '100g', 'Gatti'), 
+        new Food('Scatoletta di Pollo', 6.00, 'Cibo', 'ASSETS/IMG/scatoletta-pollo.jpg', 'Pollo', '120g', 'Cani'),  
+        new Food('Crocchette per Cani', 19.99, 'Cibo', 'ASSETS/IMG/crocchette-cani.jpg', 'Manzo', '2kg', 'Cani'),
+        new Food('Crocchette per Gatti', 18.50, 'Cibo', 'ASSETS/IMG/crocchette-gatti.webp', 'Pollo', '1.5kg', 'Gatti'),
+        new Food('Snack per Cani', 5.50, 'Cibo', 'ASSETS/IMG/snack-cani.jpg', 'Filetto', '500g', 'Cani'),
+        new Food('Latte per Gatti', 3.00, 'Cibo', 'ASSETS/IMG/latte-gatti.jpg', 'Gusto Misto', '250ml', 'Gatti'),
+        new Food('Biscotti per Cani', 4.00, 'Cibo', 'ASSETS/IMG/biscotti-cani.jpg', 'Pollo e Riso', '300g', 'Cani'),
+        new Food('Cibo Umido per Gatti', 7.00, 'Cibo', 'ASSETS/IMG/cibo-umido-gatti.webp', 'Tonno', '400g', 'Gatti'),
     ],
 
     'toys' => [
