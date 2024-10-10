@@ -1,6 +1,11 @@
 <?php
 
 
+require_once __DIR__ . '/../MODEL/Food.php';
+require_once __DIR__ . '/../MODEL/Toy.php';
+require_once __DIR__ . '/../MODEL/Products.php';
+
+
 $db = [
 
     'foods' => [
@@ -13,7 +18,7 @@ $db = [
         new Food('Biscotti per Cani', 4.00, 'Cibo', 'immagini/biscotti-cani.jpg', 'Pollo e Riso', '300g'),
         new Food('Cibo Umido per Gatti', 7.00, 'Cibo', 'immagini/cibo-umido-gatti.jpg', 'Tonno', '400g'),
     ],
-    
+
     'toys' => [
         new Toy('Pallina di Gomma', 5.00, 'Gioco', 'immagini/pallina-gomma.jpg', 'Gomma', 'Medium'),
         new Toy('Corda di Cotone', 4.00, 'Gioco', 'immagini/corda-cotone.jpg', 'Cotone', 'Small'),

@@ -39,39 +39,50 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
 </head>
 
 <body>
-    <div class="container my-5 text-center">
 
-        <h1><strong>pet shop</strong></h1>
+<div class="container my-5 text-center">
+
+        <h1><strong>PET SHOP</strong></h1>
 
     </div>
 
     <div class="container my-5">
 
-        <h2> gatti </h2>
+        <h2>FOOD</h2>
 
         <div class="container my-4">
-
             <div class="row row-cols-3">
 
-                <div class="col">
+                
+                <div class="col mb-4">
 
                     <div class="card" style="width: 18rem;">
-
-                        <img src="..." class="card-img-top" alt="...">
-
+                        <img src="<?php echo $db['foods'][0]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['foods'][0]->getName(); ?>">
                         <div class="card-body">
-
-                            <p class="card-text"></p>
-                            <p class="card-text"></p>
-                            <p class="card-text"></p>
-                            <p class="card-text"></p>
-                            <p class="card-text"></p>
-
+                            <h5 class="card-title"><?php echo $db['foods'][0]->getName(); ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $db['foods'][0]->getPrice(); ?>€</p>
+                            <p class="card-text">Tipo: <?php echo $db['foods'][0]->getTaste(); ?></p>
+                            <p class="card-text">Peso: <?php echo $db['foods'][0]->getWeight(); ?></p>
                         </div>
-
                     </div>
 
                 </div>
+
+                <div class="col mb-4">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="<?php echo $db['foods'][1]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['foods'][1]->getName(); ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $db['foods'][1]->getName(); ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $db['foods'][1]->getPrice(); ?>€</p>
+                            <p class="card-text">Tipo: <?php echo $db['foods'][1]->getTaste(); ?></p>
+                            <p class="card-text">Peso: <?php echo $db['foods'][1]->getWeight(); ?></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                
 
             </div>
 
@@ -81,28 +92,47 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
 
     <div class="container my-5">
 
-        <h2> cani </h2>
+        <h2>TOY</h2>
 
         <div class="container my-4">
-
             <div class="row row-cols-3">
 
-                <div class="col">
+                
+                <div class="col mb-4">
 
                     <div class="card" style="width: 18rem;">
-
-                        <img src="..." class="card-img-top" alt="...">
-
+                        <img src="<?php echo $db['foods'][2]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['foods'][2]->getName(); ?>">
                         <div class="card-body">
-
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum sit dicta amet eius minima quisquam, repellat veniam enim molestiae blanditiis, tempora assumenda odit recusandae? Nisi ex iure corporis laboriosam.</p>
-
+                            <h5 class="card-title"><?php echo $db['foods'][2]->getName(); ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $db['foods'][2]->getPrice(); ?>€</p>
+                            <p class="card-text">Tipo: <?php echo $db['foods'][2]->getTaste(); ?></p>
+                            <p class="card-text">Peso: <?php echo $db['foods'][2]->getWeight(); ?></p>
                         </div>
                     </div>
+
                 </div>
+
+                <div class="col mb-4">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="<?php echo $db['foods'][3]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['foods'][3]->getName(); ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $db['foods'][3]->getName(); ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $db['foods'][3]->getPrice(); ?>€</p>
+                            <p class="card-text">Tipo: <?php echo $db['foods'][3]->getTaste(); ?></p>
+                            <p class="card-text">Peso: <?php echo $db['foods'][3]->getWeight(); ?></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
             </div>
+
         </div>
 
     </div>
+    
 </body>
 </html>

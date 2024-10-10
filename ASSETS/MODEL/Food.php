@@ -7,7 +7,7 @@ class Food extends Products {
     public $weight;
     public $taste;
 
-    public function __construct(string $_name, float $_price, string $_type, string $_image, string $_taste, float $_weight)
+    public function __construct(string $_name, float $_price, string $_type, string $_image, string $_taste, string $_weight)
     {
         parent::__construct($_name, $_price, $_type, $_image);
         $this->weight = $_weight;
