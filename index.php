@@ -1,23 +1,21 @@
 <?php
 
 require_once __DIR__ . '/ASSETS/DATA/db.php';
-require_once __DIR__ . '/ASSETS/MODEL/CatShop.php';
-require_once __DIR__ . '/ASSETS/MODEL/DogShop.php';
 require_once __DIR__ . '/ASSETS/MODEL/Food.php';
 require_once __DIR__ . '/ASSETS/MODEL/Toy.php';
 require_once __DIR__ . '/ASSETS/MODEL/Products.php';
 
-$food = new Food("crocchette per cani", 19.99, "cibo", "immagini/crocchette-cani.jpg", "manzo", 2.5);
+// $food = new Food("crocchette per cani", 19.99, "cibo", "immagini/crocchette-cani.jpg", "manzo", 2.5);
 
 
-$product = new Products("prodotto generico", 15.00, "generico", "immagini/prodotto-generico.jpg");
+// $product = new Products("prodotto generico", 15.00, "generico", "immagini/prodotto-generico.jpg");
 
 
 
-var_dump($food);
+// var_dump($food);
 
 
-var_dump($product);
+// var_dump($product);
 
 ?>
 
@@ -51,11 +49,59 @@ var_dump($product);
 
         <h2> gatti </h2>
 
+        <div class="container my-4">
+
+            <div class="row row-cols-3">
+
+                <div class="col">
+
+                    <div class="card" style="width: 18rem;">
+
+                        <img src="..." class="card-img-top" alt="...">
+
+                        <div class="card-body">
+
+                            <p class="card-text"></p>
+                            <p class="card-text"></p>
+                            <p class="card-text"></p>
+                            <p class="card-text"></p>
+                            <p class="card-text"></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
     <div class="container my-5">
 
         <h2> cani </h2>
+
+        <div class="container my-4">
+
+            <div class="row row-cols-3">
+
+                <div class="col">
+
+                    <div class="card" style="width: 18rem;">
+
+                        <img src="..." class="card-img-top" alt="...">
+
+                        <div class="card-body">
+
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum sit dicta amet eius minima quisquam, repellat veniam enim molestiae blanditiis, tempora assumenda odit recusandae? Nisi ex iure corporis laboriosam.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
