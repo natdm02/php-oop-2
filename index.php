@@ -5,17 +5,6 @@ require_once __DIR__ . '/ASSETS/MODEL/Food.php';
 require_once __DIR__ . '/ASSETS/MODEL/Toy.php';
 require_once __DIR__ . '/ASSETS/MODEL/Products.php';
 
-// $food = new Food("crocchette per cani", 19.99, "cibo", "immagini/crocchette-cani.jpg", "manzo", 2.5);
-
-
-// $product = new Products("prodotto generico", 15.00, "generico", "immagini/prodotto-generico.jpg");
-
-
-
-// var_dump($food);
-
-
-// var_dump($product);
 
 ?>
 
@@ -101,12 +90,12 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
                 <div class="col mb-4">
 
                     <div class="card" style="width: 18rem;">
-                        <img src="<?php echo $db['foods'][2]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['foods'][2]->getName(); ?>">
+                        <img src="<?php echo $db['toys'][0]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['toys'][0]->getName(); ?>">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $db['foods'][2]->getName(); ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $db['foods'][2]->getPrice(); ?>€</p>
-                            <p class="card-text">Tipo: <?php echo $db['foods'][2]->getTaste(); ?></p>
-                            <p class="card-text">Peso: <?php echo $db['foods'][2]->getWeight(); ?></p>
+                            <h5 class="card-title"><?php echo $db['toys'][0]->getName(); ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $db['toys'][0]->getPrice(); ?>€</p>
+                            <p class="card-text">Tipo: <?php echo $db['toys'][0]->getMaterial(); ?></p>
+                            <p class="card-text">Peso: <?php echo $db['toys'][0]->getSize(); ?></p>
                         </div>
                     </div>
 
@@ -115,12 +104,12 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
                 <div class="col mb-4">
 
                     <div class="card" style="width: 18rem;">
-                        <img src="<?php echo $db['foods'][3]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['foods'][3]->getName(); ?>">
+                        <img src="<?php echo $db['toys'][1]->getImage(); ?>" class="card-img-top" alt="<?php echo $db['toys'][1]->getName(); ?>">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $db['foods'][3]->getName(); ?></h5>
-                            <p class="card-text">Prezzo: <?php echo $db['foods'][3]->getPrice(); ?>€</p>
-                            <p class="card-text">Tipo: <?php echo $db['foods'][3]->getTaste(); ?></p>
-                            <p class="card-text">Peso: <?php echo $db['foods'][3]->getWeight(); ?></p>
+                            <h5 class="card-title"><?php echo $db['toys'][1]->getName(); ?></h5>
+                            <p class="card-text">Prezzo: <?php echo $db['toys'][1]->getPrice(); ?>€</p>
+                            <p class="card-text">Tipo: <?php echo $db['toys'][1]->getMaterial(); ?></p>
+                            <p class="card-text">Peso: <?php echo $db['toys'][1]->getSize(); ?></p>
                         </div>
                     </div>
 
@@ -133,6 +122,6 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
         </div>
 
     </div>
-    
+
 </body>
 </html>
