@@ -3,7 +3,21 @@
 require_once __DIR__ . '/ASSETS/DATA/db.php';
 require_once __DIR__ . '/ASSETS/MODEL/CatShop.php';
 require_once __DIR__ . '/ASSETS/MODEL/DogShop.php';
+require_once __DIR__ . '/ASSETS/MODEL/Food.php';
+require_once __DIR__ . '/ASSETS/MODEL/Toy.php';
+require_once __DIR__ . '/ASSETS/MODEL/Products.php';
 
+$food = new Food("crocchette per cani", 19.99, "cibo", "immagini/crocchette-cani.jpg", "manzo", 2.5);
+
+
+$product = new Products("prodotto generico", 15.00, "generico", "immagini/prodotto-generico.jpg");
+
+
+
+var_dump($food);
+
+
+var_dump($product);
 
 ?>
 
