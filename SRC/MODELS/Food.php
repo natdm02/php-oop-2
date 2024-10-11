@@ -2,8 +2,11 @@
 
 require_once __DIR__ . '/../MODELS/Products.php';
 require_once __DIR__ . '/../EXCEPTIONS/InvalidProduct.php';
+require_once __DIR__ . '/../TRAITS/ProductDescript.php';
 
 class Food extends Products {
+
+    use ProductDescript;
 
     public $weight;
     public $taste;

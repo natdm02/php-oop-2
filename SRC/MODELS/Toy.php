@@ -2,11 +2,15 @@
 
 
 require_once __DIR__ . '/Products.php';
+require_once __DIR__ . '/../TRAITS/ProductDescript.php';
 
 
 class Toy extends Products
 
 {
+
+    use ProductDescript;
+    
     public $material;
     public $size;
 

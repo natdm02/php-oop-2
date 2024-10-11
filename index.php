@@ -57,6 +57,7 @@ require_once __DIR__ . '/SRC/DATABASE/db.php'
                             <p class="card-text">Prezzo: <?php echo $food->getPrice(); ?>€</p>
                             <p class="card-text">Tipo: <?php echo $food->getTaste(); ?></p>
                             <p class="card-text">Peso: <?php echo $food->getWeight(); ?></p>
+                            <p class="card-text">Descrizione: <?php echo $food->getDescription(); ?></p>
                         </div>
 
                     </div>
@@ -92,6 +93,7 @@ require_once __DIR__ . '/SRC/DATABASE/db.php'
                             <p class="card-text">Prezzo: <?php echo $toy->getPrice(); ?>€</p>
                             <p class="card-text">Tipo: <?php echo $toy->getMaterial(); ?></p>
                             <p class="card-text">Dimensione: <?php echo $toy->getSize(); ?></p>
+                            <p class="card-text">Descrizione: <?php echo $toy->getDescription(); ?></p>
                         </div>
                     </div>
 
