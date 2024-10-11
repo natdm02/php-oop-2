@@ -1,5 +1,6 @@
 <?php
-
+require_once __DIR__ . '/../Traits/Describable.php';
+require_once __DIR__ . '/../Exceptions/InvalidProduct.php';
 
 class Products 
 {

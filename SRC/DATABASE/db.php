@@ -1,9 +1,9 @@
 <?php
 
 
-require_once __DIR__ . '/../MODEL/Food.php';
-require_once __DIR__ . '/../MODEL/Toy.php';
-require_once __DIR__ . '/../MODEL/Products.php';
+require_once __DIR__ . '/../MODELS/Food.php';
+require_once __DIR__ . '/../MODELS/Toy.php';
+require_once __DIR__ . '/../MODELS/Products.php';
 
 
 $db = [

@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__ . '/ASSETS/DATA/db.php';
-require_once __DIR__ . '/ASSETS/MODEL/Food.php';
-require_once __DIR__ . '/ASSETS/MODEL/Toy.php';
-require_once __DIR__ . '/ASSETS/MODEL/Products.php';
+require_once __DIR__ . '/SRC/DATABASE/db.php'
+
+
+
 
 
 ?>
@@ -40,6 +40,7 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
     <div class="container my-5">
 
         <h2>FOOD</h2>
+
 
         <div class="container my-4">
 
@@ -103,6 +104,14 @@ require_once __DIR__ . '/ASSETS/MODEL/Products.php';
         </div>
 
     </div>
+
+    <!-- Sezione Pagamento -->
+    <div class="container my-5 text-center">
+        <h2>Effettua il Pagamento</h2>
+
+        
+    </div>
+
 
 </body>
 </html>
